@@ -115,10 +115,14 @@ while soda_selection not in soda_dict:
     except:
         print ("Nope")
 
-# match soda_selection:
-#     case "Coca Cola": print("You have ordered")
-#     case "Pepsi": print("You have ordered")
-#     case "Mountain Dew": print("You have ordered")
-#     case _ : print("other error")
+match soda_selection:
+    case "Coca Cola": print("You have ordered")
+    case "Pepsi": print("You have ordered")
+    case "Mountain Dew": print("You have ordered")
+    case _ : print("other error")
 
-print('That is all. You are booked.')
+confirmation = input('Is all this information correct. Would you like to book again Y or N \n')
+
+
+
+
